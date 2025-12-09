@@ -9,7 +9,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/sampathshetty/kube-shedder"
+	"github.com/sampath030/kube-shedder"
 )
 
 func TestIntegration_FullWorkflow(t *testing.T) {

@@ -7,7 +7,7 @@ A demonstration of how to use kube-shedder as a library in your Go service.
 Add kube-shedder to your project:
 
 ```bash
-go get github.com/sampathshetty/kube-shedder
+go get github.com/sampath030/kube-shedder
 ```
 
 ## Usage
@@ -18,7 +18,7 @@ package main
 import (
     "net/http"
 
-    "github.com/sampathshetty/kube-shedder"
+    "github.com/sampath030/kube-shedder"
 )
 
 func main() {

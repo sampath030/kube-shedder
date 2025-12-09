@@ -1,3 +1,3 @@
-module github.com/sampathshetty/kube-shedder
+module github.com/sampath030/kube-shedder
 
 go 1.21

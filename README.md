@@ -9,7 +9,7 @@ kube-shedder tracks in-flight HTTP requests and provides automatic load shedding
 ## Installation
 
 ```bash
-go get github.com/sampathshetty/kube-shedder
+go get github.com/sampath030/kube-shedder
 ```
 
 ## Quick Start
@@ -20,7 +20,7 @@ package main
 import (
     "net/http"
 
-    "github.com/sampathshetty/kube-shedder"
+    "github.com/sampath030/kube-shedder"
 )
 
 func main() {

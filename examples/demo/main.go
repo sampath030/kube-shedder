@@ -9,7 +9,7 @@ import (
 	"net/http"
 	"time"
 
-	shedder "github.com/sampathshetty/kube-shedder"
+	shedder "github.com/sampath030/kube-shedder"
 )
 
 func main() {
