@@ -168,6 +168,8 @@ Shed responses include:
 Configure your deployment with **separate** readiness and liveness probes:
 
 > **Important**: Do NOT use the same endpoint for both probes. The readiness probe (`/ready`) returns 503 when overloaded, which is intentional - it removes the pod from load balancing. The liveness probe (`/health`) should always return 200 as long as the process is running. Using `/ready` for liveness would cause Kubernetes to restart healthy-but-busy pods.
+>
+> Set `failureThreshold` on the readiness probe low (typically `1`) so the pod is marked NotReady as soon as load shedding starts. Liveness can keep the default higher threshold since it should only trip on true process failure.
 
 ```yaml
 apiVersion: apps/v1

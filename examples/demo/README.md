@@ -113,3 +113,5 @@ spec:
           periodSeconds: 5
           failureThreshold: 1
 ```
+
+`failureThreshold: 1` on readiness ensures the pod is marked NotReady immediately when load shedding starts, while liveness can keep a higher threshold for true process failures.
